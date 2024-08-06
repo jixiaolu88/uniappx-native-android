@@ -19,9 +19,7 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "TalkArena-plus-app"
+rootProject.name = "talk测试-app"
 include ':app'
 include ':uniappx'
-include ':kux-crypto'
-include ':x-loading-s'
-include ':x-toast-s'
+include ':jxl-talk'

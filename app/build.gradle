@@ -16,8 +16,8 @@ android {
         applicationId 'cn.uvuejs.kux'
         minSdk 23
 		targetSdk 31
-        versionCode 100
-        versionName '1.0.0'
+        versionCode 103
+        versionName '1.0.3'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -84,9 +84,7 @@ dependencies {
     implementation project(':uniappx')
     implementation fileTree(include: ['*.aar', '*.jar'], dir: '../uniappx/libs')
     implementation "com.squareup.okhttp3:okhttp:3.12.12"
-	implementation project(':kux-crypto')
-	implementation project(':x-loading-s')
-	implementation project(':x-toast-s')
+	implementation project(':jxl-talk')
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.core:core:1.1.0'
