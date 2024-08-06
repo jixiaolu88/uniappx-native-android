@@ -19,6 +19,9 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "debug-kux-pack-app"
+rootProject.name = "TalkArena-plus-app"
 include ':app'
 include ':uniappx'
+include ':kux-crypto'
+include ':x-loading-s'
+include ':x-toast-s'

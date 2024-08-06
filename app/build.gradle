@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'cn.uvuejs.unix'
+    namespace 'cn.uvuejs.kux'
 	compileSdk 34
 	
 	buildFeatures {
@@ -13,9 +13,9 @@ android {
 	}
 
     defaultConfig {
-        applicationId 'cn.uvuejs.unix'
-        minSdk 21
-        targetSdk 30
+        applicationId 'cn.uvuejs.kux'
+        minSdk 23
+		targetSdk 31
         versionCode 100
         versionName '1.0.0'
 
@@ -53,6 +53,10 @@ android {
         }
     }
 
+	lintOptions {
+	    checkReleaseBuilds false
+	    abortOnError false
+	}
 	compileOptions {
 	    sourceCompatibility JavaVersion.VERSION_1_8
 	    targetCompatibility JavaVersion.VERSION_1_8
@@ -80,6 +84,9 @@ dependencies {
     implementation project(':uniappx')
     implementation fileTree(include: ['*.aar', '*.jar'], dir: '../uniappx/libs')
     implementation "com.squareup.okhttp3:okhttp:3.12.12"
+	implementation project(':kux-crypto')
+	implementation project(':x-loading-s')
+	implementation project(':x-toast-s')
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.core:core:1.1.0'
